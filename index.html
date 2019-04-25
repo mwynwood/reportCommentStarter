@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Report Comment Starter</title>    
+    <meta charset="UTF-8">
+    <meta name="author" content="Marcus Wynwood">
+    <meta name="description" content="Report Comment Starter is a starting point for writing school reports">
+	<meta property="og:site_name" content="Report Comment Starter">
+    <meta property="og:url" content="http://mwynwood.com/reports/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Report Comment Starter">
+    <meta property="og:image" content="images/report.png">
+    <meta property="og:description" content="Report Comment Starter is a starting point for writing school reports">
+	<link rel="shortcut icon" href="images/report.png">
+    <link rel="stylesheet" href="style/style.css">	
+    <script src="scripts/rcs.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/report.png">
+        <h1>Report Comment Starter</h1>
+        <p>A starting point for writing school reports</p>
+    </header>
+    
+    <main>
+        <div id="inputs">
+            <form action="" name="options" method="get">
+                <label for="studentname">Student Name:</label><input type="text" name="studentname" value="Stew Dent"><br>
+                <label for="course">Course:</label><input type="text" name="course" value="Underwater Basket Weaving"><br>
+                <label for="opening">Opening:</label><input type="range" min="1" max="2" step="1" id="opening"><br>
+                <label for="participation">Participation:</label><input type="range" min="1" max="3" id="participation" step="1"><br>
+                <label for="attendance">Attendance:</label><input type="range" min="1" max="3" id="attendance" step="1"><br>
+                <label for="completion">Completion:</label><input type="range" min="1" max="3" id="completion" step="1"><br>
+                <label for="attitude">Attitude:</label><input type="range" min="1" max="3" id="attitude" step="1"><br>
+                <label for="closing">Closing:</label><input type="range" min="1" max="2" id="closing" step="1"><br>
+                <label for="button"></label><input type="button" value="Generate a Comment!" onClick="generateReport();">
+            </form>
+        </div>
+        <div id="outputs">
+            <textarea id="outputReport"></textarea>
+        </div>
+    </main>
+
+    <footer>
+         <p><a href="https://github.com/mwynwood/reportCommentStarter">https://github.com/mwynwood/reportCommentStarter</a></p>
+    </footer>
+    
+</body>
+</html>
